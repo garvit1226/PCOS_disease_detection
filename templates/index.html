@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PCOS Insights</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <main class="page">
+        <section class="intro">
+            <h1>PCOS Insights</h1>
+            <p>Enter the clinical and lifestyle indicators used by a trained Random Forest model to generate a screening prediction.</p>
+        </section>
+
+        <section class="form-card">
+            <form id="pcosForm">
+                <div id="fields" class="fields-grid"></div>
+
+                <button id="predictBtn" class="predict-btn" type="submit">
+                    <span>Generate Screening Prediction</span>
+                    <span class="arrow">→</span>
+                </button>
+            </form>
+        </section>
+
+        <section id="resultCard" class="result-card hidden">
+            <div class="result-header">
+                <span class="result-label">SCREENING RESULT</span>
+                <span id="resultBadge" class="result-badge">—</span>
+            </div>
+
+            <div class="result-content">
+                <div id="resultIcon" class="result-icon">◎</div>
+                <div>
+                    <h2 id="resultTitle">Prediction</h2>
+                    <p id="resultText"></p>
+                </div>
+            </div>
+
+            <div class="probability-row">
+                <span>PCOS probability</span>
+                <strong id="probability">—</strong>
+            </div>
+
+            <div class="probability-track">
+                <div id="probabilityBar"></div>
+            </div>
+        </section>
+    </main>
+
+    <script src="/static/app.js"></script>
+</body>
+</html>
