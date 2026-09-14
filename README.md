@@ -19,3 +19,7 @@ Open `http://127.0.0.1:8000`.
 The notebook trained a Random Forest using StandardScaler and 34 input features after dropping `Sl. No`, `Patient File No.`, `Weight (Kg)`, `Height(Cm)`, `Blood Group`, `FSH(mIU/mL)`, `LH(mIU/mL)`, `Waist(inch)`, and `Hip(inch)`. The website keeps the model and dataset folders empty so the trained `.pkl` files and CSV can be added later.
 
 > Educational/research screening interface; not a medical diagnosis.
+
+#Live Demo
+https://pcos-disease-detection.onrender.com/
+
