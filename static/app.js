@@ -83,8 +83,8 @@ const categoricalOptions = {
 
     // Keep original dataset encoding
     'Cycle(R/I)': {
-        'Regular cycle': 4,
-        'Irregular cycle': 2,
+        'Regular cycle': 2,
+        'Irregular cycle': 4,
         'Other/rare category': 5
     }
 };
